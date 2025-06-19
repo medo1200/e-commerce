@@ -3,7 +3,7 @@ const
     express = require('express'),
     app = express(),
     pg = require('pg'),
-    DATABASE = process.env.DATABASE,
+    DATABASE = process.env.DATABASE_PUBLIC_URL,
     PORT = process.env.PORT || 3000,
     client = new pg.Client(DATABASE);
 
