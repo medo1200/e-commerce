@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>E-commerce | Tablets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products_style.css">
+</head>
+
+<body>
+    <nav>
+        <div><a href="/">Home</a></div>
+        <div><a href="/phones">Phones</a></div>
+        <div><a href="/laptops">Laptops</a></div>
+        <div style="background-color: rgba(66, 68, 68, 0.772);"><a href="/tablets">Tablets</a></div>
+        <div><a href="/pc">PC</a></div>
+        <div><a href="/ps">PS</a></div>
+    </nav>
+
+
+    <main>
+        <div class="sidebar">
+            <div class="searchFeature">
+                <label for="searchBar">Search</label>
+                <input type="text" id="searchBar" placeholder="Search Phones">
+            </div>
+
+            <div class="priceFeature">
+                <label for="priceRange">Price</label>
+                <input type="range" id="priceRange" value="">
+                <p id="priceRangeOutput">.<!-- Range price output here --></p>
+            </div>
+
+            <div class="checkboxOptions">
+                <select id="checkboxOptions">
+                    <option selected value="" style="color: red">Choose</option>
+                    <option value="Samsung">Samsung Galaxy</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="Apple">Apple iPad</option>
+                    <option value="Microsoft">Microsoft</option>
+                    <option value="Lenovo">Lenovo</option>
+                </select>
+            </div>
+
+            <div>
+                <button id="resetButton" onclick="location.reload()">Reset/Refresh</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="product">Samsung Galaxy</div>
+            <div class="product">Huawei</div>
+            <div class="product">Apple iPad</div>
+            <div class="product">Microsoft</div>
+            <div class="product">Lenovo</div>
+        </div>
+    </main>
+
+
+    <script type="module" src="products_database_tablets.js"></script>
+    <script type="module" src="searchbar_handling_tablets.js"></script>
+</body>
+
+</html>

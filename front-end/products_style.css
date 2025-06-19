@@ -1,0 +1,111 @@
+/* Phones category */
+main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* sidebar vs. bodycontent */
+    height: 100vh;
+}
+
+main .sidebar {
+    padding: 10px;
+    background-color: rgb(44, 41, 41);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 35px;
+    /* Space between each feature in sidebar */
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+main .sidebar .searchFeature {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    font-weight: bold;
+}
+
+main .sidebar .priceFeature {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    font-weight: bold;
+}
+
+main .sidebar .searchFeature #searchBar {
+    padding: 1%;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+main .sidebar .searchFeature #searchBar:hover {
+    border: 3px rgb(13, 0, 255) solid;
+}
+
+main .sidebar .searchFeature #searchBar:focus {
+    border: 3px rgb(0, 255, 229) solid;
+}
+
+main .sidebar div .checkboxOptions,
+main .sidebar div #checkboxOptions {
+    width: 50%;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+main .sidebar #resetButton {
+    padding: 5px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+
+}
+
+main .content ,
+main .contentLaptops{
+    padding: 5%;
+    display: grid;
+    gap: 5%;
+    overflow-y: scroll;
+}
+
+main .content .product ,
+main .contentLaptops .product {
+    background-color: rgba(227, 220, 220, 0.434);
+    height: 170px;
+    text-align: center;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 25% 75%;
+    /* img size and description size */
+}
+
+main .content .product .productFirstPart img,
+main .contentLaptops .product .productFirstPart img {
+    height: 170px;
+    padding: 0 15px 0 5px;
+}
+
+main .content .product .productSecondPart,
+main .contentLaptops .product .productSecondPart {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: left;
+
+    button {
+        width: 90px;
+        padding: 5px;
+        background-color: yellow;
+        border-radius: 20px;
+        font-weight: 500;
+        border: none;
+    }
+}

@@ -1,0 +1,223 @@
+/* Styles for all html pages */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/****************************************************************************/
+/* Upper part navbar */
+body nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* old color => background-color: rgb(201, 235, 235);*/
+    background-color: rgb(21, 147, 105);
+    align-items: center;
+    height: 50px;
+}
+
+body nav a {
+    text-decoration: none;
+    color: black;
+}
+
+body nav div {
+    height: 99%;
+    font-weight: bold;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+body nav div:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-bottom: 1px solid rgb(221, 113, 113);
+}
+
+
+
+/* Styles for index.html (Home only) */
+h2.h2element {
+    /* After (nav element) and before (.homeContent class) */
+    text-align: center;
+    background-color: rgb(53, 142, 26);
+}
+
+@media (max-width: 600px) {
+    h2.h2element {
+        font-size: small;
+    }
+}
+
+/*********************************************************************************/
+/* Home content */
+
+body div.homeContent {
+    /* Home content part */
+    background-image: url("/images/fatherday_background.jpg");
+    height: 550px;
+    margin: 0 10px;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+body div.homeContent main.the4Boxes {
+    /* Container of 4 boxes */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+body div.homeContent main.the4Boxes .phonesContainer,
+body div.homeContent main.the4Boxes .laptopsContainer,
+body div.homeContent main.the4Boxes .tabletsContainer,
+body div.homeContent main.the4Boxes .pcContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    margin-bottom: 10px;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.858);
+    align-items: flex-start;
+    justify-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+    /* Auto show line scroll on x-axis when screen width small*/
+}
+
+
+body div.homeContent main.the4Boxes .phonesContainer .itemProduct,
+body div.homeContent main.the4Boxes .laptopsContainer .itemProduct,
+body div.homeContent main.the4Boxes .tabletsContainer .itemProduct,
+body div.homeContent main.the4Boxes .pcContainer .itemProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+body div.homeContent main.the4Boxes .phonesContainer .itemProduct img,
+body div.homeContent main.the4Boxes .laptopsContainer .itemProduct img,
+body div.homeContent main.the4Boxes .tabletsContainer .itemProduct img,
+body div.homeContent main.the4Boxes .pcContainer .itemProduct img {
+    height: 40px;
+}
+
+body div.homeContent main.the4Boxes .phonesContainer .itemProduct p,
+body div.homeContent main.the4Boxes .laptopsContainer .itemProduct p,
+body div.homeContent main.the4Boxes .tabletsContainer .itemProduct p,
+body div.homeContent main.the4Boxes .pcContainer .itemProduct p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+body div.homeContent main.the4Boxes .phonesContainer .itemProduct:hover,
+body div.homeContent main.the4Boxes .laptopsContainer .itemProduct:hover,
+body div.homeContent main.the4Boxes .tabletsContainer .itemProduct:hover,
+body div.homeContent main.the4Boxes .pcContainer .itemProduct:hover {
+    background-color: rgb(209, 205, 205);
+}
+
+
+/* Note: less than 1200px= 1 box , less than 850px=2 box , less than 550px = 3 boxes */
+@media (max-width: 1200px) {
+    body .homeContent .the4Boxes .pcContainer {
+        display: none !important;
+    }
+}
+
+@media (max-width: 880px) {
+    .homeContent .the4Boxes .pcContainer,
+    .homeContent .the4Boxes .phonesContainer {
+        display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .homeContent .the4Boxes .pcContainer,
+    .homeContent .the4Boxes .phonesContainer,
+    .homeContent .the4Boxes .tabletsContainer {
+        display: none !important;
+    }
+}
+
+
+/**************************************************************************/
+/* Footer bottom of page */
+
+body   footer {
+    background-color: rgb(21, 147, 105);
+    text-align: center;
+}
+
+body   footer .footerOptions {
+    /* ...your styles for .footerOptions... */
+    /* Div part inside footer element */
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0;
+}
+
+body   footer .footerOptions p {
+    /* ...your styles for p inside .footerOptions... */
+                /* Each <p  text inside ( div.footerOptions ) */
+            width: 60%;
+            font-weight: bold;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: black;
+            border-bottom: 1px solid rgba(0, 0, 0, 0);
+            cursor: pointer;
+
+}
+
+body   footer .footerOptions p svg {
+    /* ...your styles for svg inside p inside .footerOptions... */
+    /* SVG inside the <p  element */
+                height: 15px;
+}
+
+body   footer .footerOptions p:hover {
+    /* ...your styles for p:hover inside .footerOptions... */
+                border-bottom: 1px solid black;
+            letter-spacing: 1px;
+            transition: 0.3s;
+}
+
+body   footer .footerOptions p:active {
+    /* ...your styles for p:active inside .footerOptions... */
+    background-color: green;
+}
+
+body   footer .footerOptions span {
+    /* ...your styles for span inside .footerOptions... */
+                display: none;
+            width: 60%;
+            margin: auto;
+}
+
+body   footer .paymentIcons {
+    /* ...your styles for .paymentIcons... */
+            display: flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-evenly;
+        margin: auto;
+}
+
+body   footer .paymentIcons img {
+    /* ...your styles for img inside .paymentIcons... */
+                height: 3rem;
+}

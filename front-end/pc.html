@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>E-commerce | PC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products_style.css">
+</head>
+
+<body>
+    <nav>
+        <div><a href="/">Home</a></div>
+        <div><a href="/phones">Phones</a></div>
+        <div><a href="/laptops">Laptops</a></div>
+        <div><a href="/tablets">Tablets</a></div>
+        <div style="background-color: rgba(66, 68, 68, 0.772);"><a href="/pc">PC</a></div>
+        <div><a href="/ps">PS</a></div>
+    </nav>
+
+
+    <main>
+        <div class="sidebar">
+            <div class="searchFeature">
+                <label for="searchBar">Search</label>
+                <input type="text" id="searchBar" placeholder="Search Phones">
+            </div>
+
+            <div class="priceFeature">
+                <label for="priceRange">Price</label>
+                <input type="range" id="priceRange" value="">
+                <p id="priceRangeOutput">.<!-- Range price output here --></p>
+            </div>
+
+            <div class="checkboxOptions">
+                <label>
+                    <input type="checkbox"> Dell
+                </label>
+
+                <label>
+                    <input type="checkbox"> HP 
+                </label>
+
+                <label>
+                    <input type="checkbox"> Lenovo
+                </label>
+
+                <label>
+                    <input type="checkbox"> Asus
+                </label>
+
+                <label>
+                    <input type="checkbox"> MSI
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div class="product">Dell</div>
+            <div class="product">HP (Hewlett-Packard)</div>
+            <div class="product">Lenovo</div>
+            <div class="product">Asus</div>
+            <div class="product">MSI (Micro-Star International)</div>
+        </div>
+    </main>
+
+
+    <script src="searchbar_handling.js"></script>
+</body>
+
+</html>

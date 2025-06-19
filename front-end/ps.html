@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>E-commerce | PS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products_style.css">
+</head>
+
+<body>
+    <nav>
+        <div ><a href="/" >Home</a></div>
+        <div><a href="/phones">Phones</a></div>
+        <div><a href="/laptops">Laptops</a></div>
+        <div><a href="/tablets">Tablets</a></div>
+        <div><a href="/pc">PC</a></div>
+        <div style="background-color: rgba(66, 68, 68, 0.772);"><a href="/ps">PS</a></div>
+    </nav>
+
+    
+    <main>
+        <div class="sidebar">
+            <div class="searchFeature">
+                <label for="searchBar">Search</label>
+                <input type="text" id="searchBar" placeholder="Search Phones">
+            </div>
+
+            <div class="priceFeature">
+                <label for="priceRange">Price</label>
+                <input type="range" id="priceRange" value="">
+                <p id="priceRangeOutput">.<!-- Range price output here --></p>
+            </div>
+
+            <div class="checkboxOptions">
+                <label>
+                    <input type="checkbox"> PlayStation 5 (PS5)
+                </label>
+
+                <label>
+                    <input type="checkbox"> PlayStation 4 (PS4)
+                </label>
+
+                <label>
+                    <input type="checkbox"> PlayStation 3 (PS3)
+                </label>
+
+                <label>
+                    <input type="checkbox"> PlayStation 2 (PS2)
+                </label>
+
+                <label>
+                    <input type="checkbox"> PlayStation (PS1 / PSX)
+                </label>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div class="product">PlayStation 5 (PS5)</div>
+            <div class="product">PlayStation 4 (PS4)</div>
+            <div class="product">PlayStation 3 (PS3)</div>
+            <div class="product">PlayStation 2 (PS2)</div>
+            <div class="product">PlayStation (PS1 / PSX)</div>
+        </div>
+    </main>
+
+
+    <script src="searchbar_handling.js"></script>
+</body>
+
+</html>

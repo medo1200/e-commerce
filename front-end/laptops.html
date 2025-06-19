@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <title>E-commerce | Laptops</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products_style.css">
+</head>
+
+<body>
+    <nav>
+        <div><a href="/">Home</a></div>
+        <div><a href="/phones">Phones</a></div>
+        <div style="background-color: rgba(66, 68, 68, 0.772);"><a href="/laptops">Laptops</a></div>
+        <div><a href="/tablets">Tablets</a></div>
+        <div><a href="/pc">PC</a></div>
+        <div><a href="/ps">PS</a></div>
+    </nav>
+
+    <main>
+        <div class="sidebar">
+            <div class="searchFeature">
+                <label for="searchBar">Search</label>
+                <input type="text" id="searchBar" placeholder="Search Phones">
+            </div>
+
+            <div class="priceFeature">
+                <label for="priceRange">Max Price</label>
+                <input type="range" id="priceRange" value="1000000" min="1" max="100000">
+                <p id="priceRangeOutput">EGP<!-- Range price output here --></p>
+            </div>
+
+            <div class="checkboxOptions">
+                <select id="checkboxOptions">
+                    <option selected value="" style="color: red">Choose</option>
+                    <option value="HP">HP</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Acer">Acer</option>
+                    <option value="Dell">Dell</option>
+                </select>
+            </div>
+
+            <div>
+                <button id="resetButton" onclick="location.reload()">Reset/Refresh</button>
+            </div>
+
+        </div>
+
+        <div class="contentLaptops">
+
+<!--
+            <div class="product">
+                <div class="productFirstPart">
+                    <img src="images/phones_products/nokia_g60_5g.jpg" alt="Nokia G60">
+                </div>
+                <div class="productSecondPart">
+                    <p id="product_Name_5">Nokia G60 5G</p>
+                    <p id="Description_5">Nokia G60, 128GB, Android 13, 3-day battery</p>
+                    <p>8,997.38 <span id="currency">EGP</span></p>
+                    <span id="Brand_Nokia_5">Brand: Nokia</span>
+                    <button>Add to cart</button>
+                </div>
+
+            </div>
+-->
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <script type="module" src="products_database_laptops.js"></script>
+    <script type="module" src="searchbar_handling_laptops.js"></script>
+</body>
+
+</html>
