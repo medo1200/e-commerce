@@ -25,13 +25,13 @@
             </div>
 
             <div class="priceFeature">
-                <label for="priceRange">Price</label>
-                <input type="range" id="priceRange" value="">
-                <p id="priceRangeOutput">.<!-- Range price output here --></p>
+                <label for="priceRange">Max Price</label>
+                <input type="range" id="priceRange" value="100000" min="1" max="100000">
+                <p id="priceRangeOutput">EGP<!-- Range price output here --></p>
             </div>
 
             <div class="checkboxOptions">
-                <select id="checkboxOptions">
+                <select class="checkboxOptions" id="checkboxOptionsTablets">
                     <option selected value="" style="color: red">Choose</option>
                     <option value="Samsung">Samsung Galaxy</option>
                     <option value="Huawei">Huawei</option>
@@ -42,11 +42,11 @@
             </div>
 
             <div>
-                <button id="resetButton" onclick="location.reload()">Reset/Refresh</button>
+                <button id="resetButton" onclick="location.reload()">Reset / Refresh</button>
             </div>
         </div>
 
-        <div class="content">
+        <div class="contentTablets">
             <div class="product">Samsung Galaxy</div>
             <div class="product">Huawei</div>
             <div class="product">Apple iPad</div>

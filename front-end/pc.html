@@ -25,47 +25,34 @@
             </div>
 
             <div class="priceFeature">
-                <label for="priceRange">Price</label>
-                <input type="range" id="priceRange" value="">
-                <p id="priceRangeOutput">.<!-- Range price output here --></p>
+                <label for="priceRange">Max Price</label>
+                <input type="range" id="priceRange" value="100000" min="1" max="100000">
+                <p id="priceRangeOutput">EGP<!-- Range price output here --></p>
             </div>
 
             <div class="checkboxOptions">
-                <label>
-                    <input type="checkbox"> Dell
-                </label>
-
-                <label>
-                    <input type="checkbox"> HP 
-                </label>
-
-                <label>
-                    <input type="checkbox"> Lenovo
-                </label>
-
-                <label>
-                    <input type="checkbox"> Asus
-                </label>
-
-                <label>
-                    <input type="checkbox"> MSI
-                </label>
-
+                <select id="checkboxOptionsPC">
+                    <option value="" selected style="color: red;">Choose</option>
+                    <option value="Dell">Dell</option>
+                    <option value="HP">HP</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="ASUS">Asus</option>
+                    <option value="MSI">MSI</option>
+                </select>
             </div>
 
+            <div>
+                <button id="resetButton" onclick="location.reload()">Reset / Refresh</button>
+            </div>
         </div>
 
         <div class="content">
-            <div class="product">Dell</div>
-            <div class="product">HP (Hewlett-Packard)</div>
-            <div class="product">Lenovo</div>
-            <div class="product">Asus</div>
-            <div class="product">MSI (Micro-Star International)</div>
+            <!-- Fetched data from products_database_pc file-->
         </div>
     </main>
 
-
-    <script src="searchbar_handling.js"></script>
+    <script type="module" src="products_database_pc.js"></script>
+    <script type="module" src="searchbar_handling_pc.js"></script>
 </body>
 
 </html>
